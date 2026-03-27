@@ -1,15 +1,14 @@
 {
-  "name": "wasp-repo",
+  "name": "myapp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Starter web app built with Node.js",
   "scripts": {
-    "prettier:check": "prettier --ignore-unknown --check --config .prettierrc .",
-    "prettier:format": "prettier --ignore-unknown --write --config .prettierrc ."
+    "dev": "node server.js",
+    "dev:watch": "node --watch server.js",
+    "start": "node server.js"
   },
-  "devDependencies": {
-    "prettier": "3.5.3",
-    "prettier-plugin-organize-imports": "4.1.0",
-    "prettier-plugin-pkg": "0.19.1",
-    "prettier-plugin-sh": "0.17.4",
-    "prettier-plugin-tailwindcss": "0.6.13",
-    "typescript": "~5.8.3"
+  "engines": {
+    "node": ">=20"
   }
 }

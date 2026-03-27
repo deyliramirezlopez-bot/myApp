@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myApp</title>
+    <meta
+      name="description"
+      content="Plantilla base en Node.js para construir tu primera web app."
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <p class="eyebrow">Node.js Starter</p>
+        <h1>Una base limpia para construir tu primera web app</h1>
+        <p class="lede">
+          Esta plantilla corre desde la raiz, sin Wasp y sin magia rara. Tiene
+          un servidor Node sencillo, una landing lista para editar y un endpoint
+          de prueba para empezar a conectar frontend y backend.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="#ideas">Ver ideas</a>
+          <a class="button secondary" href="/api/health">Probar API</a>
+        </div>
+      </section>
+
+      <section class="grid" id="ideas">
+        <article class="card">
+          <h2>Habit Tracker</h2>
+          <p>
+            Ideal para aprender CRUD, fechas, progreso visual y autenticacion.
+          </p>
+        </article>
+        <article class="card">
+          <h2>Study Planner</h2>
+          <p>
+            Muy buena opcion si quieres organizar sesiones, objetivos y tareas.
+          </p>
+        </article>
+        <article class="card">
+          <h2>Content Planner</h2>
+          <p>
+            Puedes gestionar ideas, borradores, estados y calendario editorial.
+          </p>
+        </article>
+      </section>
+
+      <section class="panel">
+        <h2>Primeros pasos</h2>
+        <ol>
+          <li>Edita <code>public/index.html</code> para cambiar el contenido.</li>
+          <li>Usa <code>public/styles.css</code> para definir el look.</li>
+          <li>Amplia <code>server.js</code> para crear tus propias rutas API.</li>
+        </ol>
+        <button id="health-check" class="button primary">Comprobar servidor</button>
+        <p id="health-output" class="status">Esperando comprobacion...</p>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+  </html>
