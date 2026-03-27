@@ -15,7 +15,7 @@ export function NotFoundPage() {
           to={user ? routes.DemoAppRoute.to : routes.LandingPageRoute.to}
           className="text-accent-foreground bg-accent hover:bg-accent/90 inline-block rounded-lg px-8 py-3 font-semibold transition duration-300"
         >
-          Go Back Home
+          {user ? "Go to Planner" : "Go Back Home"}
         </WaspRouterLink>
       </div>
     </div>

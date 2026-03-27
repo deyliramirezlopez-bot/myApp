@@ -49,7 +49,7 @@ export const paymentPlanCards: Record<PaymentPlanId, PaymentPlanCard> = {
     name: prettyPaymentPlanName(PaymentPlanId.Credits10),
     price: "$9.99",
     description: "One-time purchase of 10 credits for your account",
-    features: ["Use credits for e.g. OpenAI API calls", "No expiration date"],
+    features: ["Use credits for premium actions in your app", "No expiration date"],
   },
 };
 

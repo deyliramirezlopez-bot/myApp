@@ -68,7 +68,7 @@ app OpenSaaS {
       // }
     },
     onAuthFailedRedirectTo: "/login",
-    onAuthSucceededRedirectTo: "/demo-app",
+    onAuthSucceededRedirectTo: "/planner",
   },
 
   db: {
@@ -150,16 +150,11 @@ action updateIsUserAdminById {
 }
 //#endregion
 
-//#region Demo AI App
-route DemoAppRoute { path: "/demo-app", to: DemoAppPage }
+//#region Planner
+route DemoAppRoute { path: "/planner", to: DemoAppPage }
 page DemoAppPage {
   authRequired: true,
   component: import DemoAppPage from "@src/demo-ai-app/DemoAppPage"
-}
-
-action generateGptResponse {
-  fn: import { generateGptResponse } from "@src/demo-ai-app/operations",
-  entities: [User, Task, GptResponse]
 }
 
 action createTask {
@@ -175,11 +170,6 @@ action deleteTask {
 action updateTask {
   fn: import { updateTask } from "@src/demo-ai-app/operations",
   entities: [Task]
-}
-
-query getGptResponses {
-  fn: import { getGptResponses } from "@src/demo-ai-app/operations",
-  entities: [User, GptResponse]
 }
 
 query getAllTasksByUser {
